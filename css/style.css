@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+  padding:0px;
+  margin:0px;
+}
+a{
+	text-decoration:none;
+}
+/* Style the body */
+body {
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  color: #2E3D4F;
+  display:flex;
+  justify-content:center;
+}
+.hold{
+	background-image: url("../images/1.jpg");
+	width: 80%;
+	height:380px;
+	text-align: center;
+	padding-top:210px;
+	color: #2E3D4F;
+	
+}
+.hold a{
+	color:#CE3C28;
+	
+}
+.hold h1{
+	color:#CE3C28;
+	background-color:#3A7A98;
+	margin:0px auto;
+}
+.title{
+	border-radius:15px 50px;
+	background-color:#3A7A98;
+	width:280px;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #2E3D4F;
+  justify-content:center;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.active{
+	background-color:#CE3C28;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #3A7A98;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  justify-content:center;
+  margin: 0px auto;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+	flex:30%;
+  width:70%;
+  padding: 20px;	
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color:white;
+  padding: 100px;
+}
+
+/* Fake image, just for this example */
+.img {
+  background-image: url("../images/4.jpg");
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height:800px;
+}
+.img p{
+	font-size:20px;
+	background-color:#CE3C28;
+	width:50%;
+	opacity:0.6;
+	margin:0px auto;
+	border-radius:15px 50px;
+}
+.img a{
+	background-color:#2E3D4F;
+	color:white;
+	border-radius:15px 50px;
+}
+
+.container{
+	width:50%;
+	height:500px;
+	background-image: url("../images/2.jpg");
+	background-repeat: no-repeat;
+	margin:0px auto;
+}
+.bgc{
+	height:500px;
+	padding-top:150px;
+	background-color:#3A7A98;
+	opacity:0.7;
+	text-align:center;
+	color:white;
+	
+}
+.bgc a{
+	font-size:35px;
+	color:white;
+	padding:30px;
+	background-color:#CE3C28;
+	border:3px solid #2E3D4F;
+	border-radius: 15px 50px;
+}
+
+.bgc a:hover{
+	background-color:#2E3D4F;
+	color:#CE3C28;
+	transition:0.5s;
+}
+.row2 {
+	text-align:center;
+	margin-top:50px;
+}
+.row2 a{
+	color:#2E3D4F;
+	background-color:#CE3C28;
+	padding:10px;
+	border-radius:15px 50px;
+
+}
+.main2{
+	display:flex;
+	justify-content:space-around;
+	margin-top:100px;
+	margin-bottom:100px;
+	text-align:center;
+}
+.img2{
+	height:400px;
+	width:30%;
+	background-image:url("../images/5.jpg");
+	padding-top:150px;
+}
+.img3{
+	height:400px;
+	width:30%;
+	background-image:url("../images/6.jpg");
+	padding-top:150px;
+}
+.img4{
+	height:400px;
+	width:30%;
+	background-image:url("../images/7.jpg");
+	padding-top:150px;
+}
+.main2 a{
+	color:#2E3D4F;
+	background-color:#CE3C28;
+	padding:20px;
+	font-size:50px;
+	opacity:0.9;
+	border-radius:15px 50px;
+	
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #2E3D4F;
+  color:#CE3C28;
+}
+.footer a{
+	color:#CE3C28;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+  
+  }
+.navbar
+{
+	height:50px;
+	margin-bottom:50px;
+	background-color: #2E3D4F;
+	}
+	.header{
+		height:100px;
+		margin-bottom:10px;
+		
+	}
+  .hold{
+	  background-image:url("../images/3.jpg");
+	  padding-top:30px;
+	  height:100px;
+  }
+	.container{
+		width:100%;
+	}
+	.img p{
+		width:250px;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	
+	.container{
+		background-image: url("../images/8.jpg");
+	}
+	.main2{
+		display:flex;
+		/*<--ex-direction:column*/
+		background-image:none;
+		margin-top:10px;
+		
+	}
+	.img2{
+		width:60%;
+		margin:10px auto;
+		background-image:none;
+	}
+	.img3{
+		width:60%;
+		margin:10px auto;
+		background-image:none;
+
+	}
+	.img4{
+		width:60%;
+		margin:10px auto;
+		background-image:none;
+	}
+}
+@media screen and (max-width: 1250px){
+	.container{
+		background-image: url("../images/12.jpg");
+		height:372px;
+		
+	}
+	.bgc{
+		height:372px;
+	}
+	.img{
+		background-image: url("../images/14.jpg");
+	}
+}
+@media screen and (max-width: 440px){
+	.bgc a{
+		padding:0.5%;
+		font-size:26px;
+	}
+	.container{
+		background-image: url("../images/13.jpg");
+		
+	}
+	.bgc{
+		height:326px;
+	}
+	
+}
